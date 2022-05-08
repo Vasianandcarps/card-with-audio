@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <audio id="audio">
+        <source src="prismo-stronger.mp3"> 
+        Your browser doesnt supp audio
+    </audio>
+    <img id="pic" src="puz-lee-yang.jpg" alt="" height="300px">
+    <script>
+        let pic = document.getElementById("pic")
+        let audio = document.getElementById("audio")
+        let i=true
+        pic.onclick = function (){
+           if(i){
+audio.play();
+i=false
+           } else{
+               audio.pause();
+               i=true
+           }
+        }
+    </script>
+</body>
+</html>
